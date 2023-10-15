@@ -1,0 +1,237 @@
+.skills-page{
+    padding-top: 4em;
+    padding-bottom: 9em;
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+
+.Narrow-content {
+    padding: 0 2.5em;
+}
+
+
+.Heading-meta {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.col-heading {
+    font-size: 18px;
+    margin-bottom: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    position: relative;
+}
+
+.col-md-12 p {
+    margin-bottom: 1.5em;
+    margin: 0 0 10px;
+    display: block;
+   
+}
+
+
+.progress-wrap{
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+
+.progress-wrap h3 {
+    font-size: 16px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+
+
+.progress {
+    height: 6px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #f2f3f7;
+    /* overflow: visible; */
+    margin-bottom: 20px;
+}
+
+
+
+.progress-bar {
+    background: #2c98f0;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 600;
+    text-align: right;
+    position: relative;
+    /* overflow: visible; */
+    border-radius: 8px;
+
+
+    width: 0%;
+    height: 100%;
+    color: #fff;
+    background-color: #337ab7;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    transition: width 0.6s ease;
+}
+
+.progress-bar span{
+    z-index: 1;
+}
+
+.progress-bar.color-1 {
+background: #2c98f0;
+}
+.progress-bar.color-1 span {
+    color: #2c98f0;
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+
+.progress-bar.color-1:after {
+    background: #2c98f0;
+}
+
+
+
+
+.progress-bar.color-2 {
+background: #d62cf0;
+}
+.progress-bar.color-2 span {
+    color: #d62cf0;
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+
+.progress-bar.color-2:after {
+    background: #d62cf0;
+}
+
+
+
+.progress-bar.color-3 {
+background: #50f02c;
+}
+.progress-bar.color-3 span {
+    color: #50f02c;
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+.progress-bar.color-3:after {
+    background: #50f02c;
+}
+
+
+
+
+.progress-bar.color-4 {
+background: #f02c53;
+}
+.progress-bar.color-4 span {
+    color: #f02c53;
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+.progress-bar.color-4:after {
+    background: #f02c53;
+}
+
+
+
+.progress-bar.color-5 {
+background: #f09e2c;
+}
+.progress-bar.color-5 span {
+    color: #f09e2c;
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+.progress-bar.color-5:after {
+    background: #f09e2c;
+}
+
+
+
+
+.progress-bar.color-6 {
+background: #002b9fa7;
+}
+.progress-bar.color-6 span {
+    color: #002b9fa7;
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+.progress-bar.color-6:after {
+    background: #002b9fa7;
+}
+
+
+
+
+
+
+
+.progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #2c98f0;
+    border-radius: 50%;
+}
+
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 992px){
+.Heading {
+    margin-left: 25%;
+    right: 25%;
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-md-12 {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+}

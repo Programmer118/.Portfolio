@@ -1,0 +1,158 @@
+
+.animate{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.AnimateUD{
+    animation-name: AnimateUD;
+    animation-duration: 1.5s;
+     transition: all 2s ease-in;
+}
+
+
+.AnimateDU{
+    animation-name: AnimateDU;
+    animation-duration: 1.5s;
+     transition: all 2s ease-in;
+}
+
+
+
+
+.AnimateLR{
+   animation-name: AnimateLR;
+   animation-duration: 1.5s;
+    transition: all 2s ease-in;
+}
+
+
+
+
+.AnimateRL{
+    animation-name: AnimateRL;
+    animation-duration: 1.5s;
+     transition: all 2s ease-in;
+}
+
+
+.AnimateXR{
+    animation-name: AnimateXR;
+    animation-duration: 1s;
+     transition: all 2s ease-in;
+}
+
+
+
+
+.AnimateLR1S{
+   animation-name: AnimateLR;
+   animation-duration: 2s;
+    transition: all 2s ease-in;
+}
+.AnimateLR2S{
+    animation-name: AnimateLR;
+    animation-duration: 3s;
+     transition: all 2s ease-in;
+ }
+.AnimateLR3S{
+    animation-name: AnimateLR;
+    animation-duration: 4s;
+     transition: all 2s ease-in;
+ }
+ 
+
+
+ .AnimateRL1S{
+    animation-name: AnimateRL;
+    animation-duration: 2s;
+     transition: all 2s ease-in;
+}
+ .AnimateRL2S{
+    animation-name: AnimateRL;
+    animation-duration: 3s;
+     transition: all 2s ease-in;
+}
+ .AnimateRL3S{
+    animation-name: AnimateRL;
+    animation-duration: 4s;
+     transition: all 2s ease-in;
+}
+
+
+
+ 
+
+@keyframes AnimateXR {
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-190px);
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(00px);
+    }
+}
+
+
+@keyframes AnimateLR {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-90px);
+    }
+
+
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(00px);
+    }
+}
+
+
+@keyframes AnimateRL {
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(00px);
+    }
+}
+
+@keyframes AnimateDU {
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(00px);
+    }
+}
+
+
+@keyframes AnimateUD {
+    from{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(00px);
+    }
+}
+
+

@@ -1,0 +1,30 @@
+
+.main{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.Container{
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media (min-width: 1065px) {
+    .Container{
+        width: calc(100% - 300px);
+        float: right;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+}
+
+.about-page {
+    padding-top: 4em;
+    padding-bottom: 9em;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+  }
