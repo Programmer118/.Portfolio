@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import "../Styles/home.css";
-import { useInView } from "react-intersection-observer";
 
 
 const Homepage = ({ setCurrentPage }) => {
@@ -12,9 +11,6 @@ const Homepage = ({ setCurrentPage }) => {
  
 
   useEffect(() => {
-    if(onPage){
-      setCurrentPage("#")
-    }
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
     }, 5000);
@@ -25,7 +21,6 @@ const Homepage = ({ setCurrentPage }) => {
        }
    
   });
-
   return (
     <section ref={getPage}  className="home-page" id="home">
       <div className="">f</div>
