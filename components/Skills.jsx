@@ -4,22 +4,25 @@ import "@/Styles/Animate.css";
 
 const Skills = ({ onSkills }) => {
   const { ref: Animate, inView: onAnimate } = useInView({
-    triggerOnce:true
+    triggerOnce: true,
   });
-
- 
 
   return (
     <section className="skills-page" id="skills">
       <div className="Narrow-content">
         <div className="row">
           <div ref={onSkills} className="Heading">
-            <span ref={Animate}
+            <span
+              ref={Animate}
               className={`Heading-meta ${onAnimate ? "AnimateXR" : "animate"}`}
             >
               My Specialty
             </span>
-            <h2 className={`col-heading ${onAnimate ? "AnimateLR" : "animate"}`}>My Skills</h2>
+            <h2
+              className={`col-heading ${onAnimate ? "AnimateLR" : "animate"}`}
+            >
+              My Skills
+            </h2>
           </div>
         </div>
         <div className="row">

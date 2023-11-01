@@ -1,5 +1,5 @@
 import "@/Styles/about.css";
-import "@/Styles/Animate.css"
+import "@/Styles/Animate.css";
 
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import PublicTwoToneIcon from "@mui/icons-material/PublicTwoTone";
@@ -9,7 +9,6 @@ import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import { useInView } from "react-intersection-observer";
 
 const About = ({ onAbout }) => {
-
   const { ref: Bulb, inView: inBulb } = useInView({
     triggerOnce: true,
   });
@@ -42,9 +41,11 @@ const About = ({ onAbout }) => {
               <div className="col-md">
                 <div className="about-desc">
                   <span className="heading-meta">About me</span>
-                  <h2 ref={onAbout} className="heading">Who am I?</h2>
- 
-                  <p >
+                  <h2 ref={onAbout} className="heading">
+                    Who am I?
+                  </h2>
+
+                  <p>
                     <strong>Hi I'm Shivam Singh </strong>I am a graduate student
                     with a strong passion for technology. I have completed
                     training in Next.js, CSS3, HTML5, Python, and basic C
@@ -110,7 +111,7 @@ const About = ({ onAbout }) => {
               }`}
             >
               <div className={`icon4 `}>
-                <span  id="icon4">
+                <span id="icon4">
                   <SmartphoneIcon fontSize="large" />
                 </span>
                 <h3 ref={mob}>Application</h3>

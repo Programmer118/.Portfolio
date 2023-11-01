@@ -4,24 +4,24 @@
 
 
 
-.input{
-    width: 60%;
-    margin-bottom: 1.5rem;
-    background: #F2F3F7;
-    color: #6a6a6a;
-    font-size: 1.5rem;
-}
-textarea{
-    font-size: 1.3rem;
-    width: 60%;
-    height: 10rem;
-    margin-bottom: 3rem;
-    border: 1px solid #6a6a6a;
-    background: #F2F3F7;
-    color: #6a6a6a;
-    padding-left: 0.5em;
-}
 @media (min-width:960px) {
+    .input{
+        width: 60%;
+        margin-bottom: 1.5rem;
+        background: #F2F3F7;
+        color: #6a6a6a;
+        font-size: 1.5rem;
+    }
+    textarea{
+        font-size: 1.3rem;
+        width: 60%;
+        height: 10rem;
+        margin-bottom: 3rem;
+        border: 1px solid #6a6a6a;
+        background: #F2F3F7;
+        color: #6a6a6a;
+        padding-left: 0.5em;
+    }
     
     
     .contact-page{

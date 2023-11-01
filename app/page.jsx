@@ -29,16 +29,15 @@ export default function Home() {
       setCurrentPage("#skills");
     } else if (inEducation) {
       setCurrentPage("#education");
-    }
-    else if(inContact){
-      setCurrentPage("#contact")
+    } else if (inContact) {
+      setCurrentPage("#contact");
     }
   });
 
   return (
     <m.main
       className="main"
-      style={{backgroundColor:"white"}}
+      style={{ backgroundColor: "white" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
@@ -57,7 +56,7 @@ export default function Home() {
 
         <Education Oneducation={education} />
 
-        <Contact onContact={contact}/>
+        <Contact onContact={contact} />
       </div>
     </m.main>
   );
