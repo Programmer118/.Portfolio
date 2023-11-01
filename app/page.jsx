@@ -1,5 +1,5 @@
 "use client";
-import "@/styles/Page.css";
+import "@/Styles/Page.css";
 import Homepage from "@/components/Home";
 import About from "@/components/About";
 import Nav from "@/components/Nav";
