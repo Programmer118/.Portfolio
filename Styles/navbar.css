@@ -3,6 +3,12 @@
     transition: all 2s ease-in;
 }
 
+.no{
+    color: #f80505;
+    text-decoration: line-through !important;
+}
+
+
 @media (max-width:1060px) {
 
     .hidden {

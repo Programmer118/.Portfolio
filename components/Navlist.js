@@ -27,13 +27,13 @@ export const navItems = [
       id: 4,
       title: "experience",
       path: "#experience",
-      cName: "a",
+      cName: "no",
     },
     {
       id: 5,
       title: "work",
       path: "#work",
-      cName: "a",
+      cName: "no",
     },
     {
       id: 6,

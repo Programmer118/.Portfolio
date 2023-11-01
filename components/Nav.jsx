@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import "../Styles/navbar.css";
+import "@/Styles/navbar.css";
 import { navItems } from "./Navlist";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import Link from "next/link";
 
 
 
@@ -60,6 +59,7 @@ const Nav = ({navigate,setNavigate}) => {
                   <li className="active" key={items.id} onClick={handleClick}>
                     <a
                       href={items.path}
+                      className={items.cName}
                       onClick={() => setNavigate(items.path)}
                     >
                       {items.title}
@@ -69,6 +69,7 @@ const Nav = ({navigate,setNavigate}) => {
                   <li  key={items.id} onClick={handleClick}>
                     <a
                       href={items.path}
+                      className={items.cName}
                       onClick={() => setNavigate(items.path)}
                     >
                       {items.title}

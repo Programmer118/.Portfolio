@@ -5,14 +5,14 @@
 }
 
 
-.AnimateUD{
+.AnimateDU{
     animation-name: AnimateUD;
     animation-duration: 1.5s;
      transition: all 2s ease-in;
 }
 
 
-.AnimateDU{
+.AnimateUD{
     animation-name: AnimateDU;
     animation-duration: 1.5s;
      transition: all 2s ease-in;

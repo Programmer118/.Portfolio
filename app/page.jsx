@@ -1,20 +1,44 @@
 "use client";
-import "../styles/Page.css";
+import "@/styles/Page.css";
 import Homepage from "@/components/Home";
 import About from "@/components/About";
 import Nav from "@/components/Nav";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Skills from "@/components/Skills";
 
-import { motion as m,  } from "framer-motion";
+import { motion as m } from "framer-motion";
 import Education from "@/components/Education";
+import { useInView } from "react-intersection-observer";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(" ");
 
+  const { ref: home, inView: inHome } = useInView();
+  const { ref: about, inView: inAbout } = useInView();
+  const { ref: skills, inView: inSkills } = useInView();
+  const { ref: education, inView: inEducation } = useInView();
+  const { ref: contact, inView: inContact } = useInView();
+
+  useEffect(() => {
+    if (inHome) {
+      setCurrentPage("#");
+    } else if (inAbout) {
+      setCurrentPage("#about");
+    } else if (inSkills) {
+      setCurrentPage("#skills");
+    } else if (inEducation) {
+      setCurrentPage("#education");
+    }
+    else if(inContact){
+      setCurrentPage("#contact")
+    }
+  });
+
   return (
     <m.main
       className="main"
+      style={{backgroundColor:"white"}}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
@@ -25,13 +49,15 @@ export default function Home() {
     >
       <Nav navigate={currentPage} setNavigate={setCurrentPage} />
       <div className="Container">
-        <Homepage setCurrentPage={setCurrentPage} />
+        <Homepage onHome={home} />
 
-        <About setCurrentPage={setCurrentPage} />
+        <About onAbout={about} />
 
-        <Skills setCurrentPage={setCurrentPage} />
+        <Skills onSkills={skills} />
 
-        <Education setCurrentPage={setCurrentPage}/>
+        <Education Oneducation={education} />
+
+        <Contact onContact={contact}/>
       </div>
     </m.main>
   );

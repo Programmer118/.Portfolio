@@ -1,42 +1,34 @@
 'use client'
 import "@/Styles/education.css";
-import { useEffect, useState } from "react";
+import '@/Styles/Animate.css'
+import {  useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-const Education = ({setCurrentPage}) => {
-  const { ref: getPage, inView: onPage } = useInView();
+const Education = ({Oneducation}) => {
+  const { ref: Animate, inView: onAnimate } = useInView({
+    triggerOnce:true
+  });
   const [collapseOne, setCollapseOne] = useState(true)
   const [collapseTwo, setCollapseTwo] = useState(false)
   const [collapseThree, setCollapseThree] = useState(false)
 
 
-
-  const handleCollaps = ()=>{
-    setCollapseOne(!collapseOne)
-  }
-
-  useEffect(() => {
-  if(onPage){
-    setCurrentPage("#education")
-  }
-    
-  }, )
   
 
   return (
     <div className="education-page" id="education">
       <div className="narrow-content">
         <div className="row">
-          <div className="heading-contant col-md-offset-3 col-md-6">
-            <span className="heading-meta">Education</span>
-            <h3 className="heading">Education</h3>
+          <div  className="heading-contant col-md-offset-3 col-md-6">
+            <span className={`heading-meta ${onAnimate ? "AnimateLR" : "animate"}`}>Education</span>
+            <h3 className={`heading ${onAnimate ? "AnimateLR" : "animate"}`}>Education</h3>
           </div>
         </div>
         <div className="row">
           <div className="col-md-12">
             <div className="collapse-panel">
               <div className="panel-group">
-                <div className="panel panel-default">
+                <div ref={Animate} className={`panel panel-default ${onAnimate ? "AnimateLR1S" : "animate"}`}>
                   <div className="panel-heading">
                     <h4 className="panel-title">
                       <a href="#collapsedOne" onClick={()=>setCollapseOne(!collapseOne)} className={`${collapseOne ? "":"collapsed"}`}>
@@ -64,10 +56,10 @@ const Education = ({setCurrentPage}) => {
                     </div>
                   </div>
                 </div>
-                <div className="panel panel-default">
+                <div className={`panel panel-default ${onAnimate ? "AnimateLR1S" : "animate"}`}>
                   <div className="panel-heading">
                     <h4 className="panel-title">
-                      <a href="#collapsedTwo" onClick={()=>setCollapseTwo(!collapseTwo)} className={`${collapseTwo ? "":"collapsed"}`}>
+                      <a href="#collapsedTwo" ref={Oneducation}  onClick={()=>setCollapseTwo(!collapseTwo)} className={`${collapseTwo ? "":"collapsed"}`}>
                       HIGH SCHOOL SECONDARY EDUCATION
                       </a>
                     </h4>
@@ -92,10 +84,10 @@ const Education = ({setCurrentPage}) => {
                     </div>
                   </div>
                 </div>
-                <div  className="panel panel-default">
+                <div  className={`panel panel-default ${onAnimate ? "AnimateLR1S" : "animate"}`}>
                   <div className="panel-heading">
                     <h4 className="panel-title">
-                      <a ref={getPage} onClick={()=>setCollapseThree(!collapseThree)} href="#collapsedThree" className={`${collapseThree ? "":"collapsed"}`}>
+                      <a  onClick={()=>setCollapseThree(!collapseThree)} href="#collapsedThree" className={`${collapseThree ? "":"collapsed"}`}>
                       Secondary School EDUCATION
                       </a>
                     </h4>

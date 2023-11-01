@@ -1,6 +1,5 @@
-"use client";
-import "../Styles/about.css";
-import "../Styles/Animate.css"
+import "@/Styles/about.css";
+import "@/Styles/Animate.css"
 
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import PublicTwoToneIcon from "@mui/icons-material/PublicTwoTone";
@@ -8,10 +7,8 @@ import StorageOutlinedIcon from "@mui/icons-material/StorageOutlined";
 import SmartphoneIcon from "@mui/icons-material/Smartphone";
 
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 
-const About = ({ setCurrentPage }) => {
-  const { ref: getPage, inView: onPage } = useInView();
+const About = ({ onAbout }) => {
 
   const { ref: Bulb, inView: inBulb } = useInView({
     triggerOnce: true,
@@ -31,12 +28,6 @@ const About = ({ setCurrentPage }) => {
     triggerOnce: true,
   });
 
-  useEffect(() => {
-    if (onPage) {
-      setCurrentPage("#about");
-    }
-  });
-
   return (
     <section className="about-page" id="about">
       <div className="narrow-contant">
@@ -51,9 +42,9 @@ const About = ({ setCurrentPage }) => {
               <div className="col-md">
                 <div className="about-desc">
                   <span className="heading-meta">About me</span>
-                  <h2 className="heading">Who am I?</h2>
-
-                  <p ref={getPage}>
+                  <h2 ref={onAbout} className="heading">Who am I?</h2>
+ 
+                  <p >
                     <strong>Hi I'm Shivam Singh </strong>I am a graduate student
                     with a strong passion for technology. I have completed
                     training in Next.js, CSS3, HTML5, Python, and basic C

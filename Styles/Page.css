@@ -1,4 +1,12 @@
 
+ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-padding-start: 0px !important;
+    padding-inline-start: 0px !important;
+}
+  
+
 .main{
     position: relative;
     overflow: hidden;

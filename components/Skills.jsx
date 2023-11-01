@@ -1,34 +1,29 @@
-import React, { useEffect } from "react";
-import "../Styles/skill.css";
+import "@/Styles/skill.css";
 import { useInView } from "react-intersection-observer";
-import "../Styles/Animate.css";
+import "@/Styles/Animate.css";
 
-const Skills = ({ setCurrentPage }) => {
-  const { ref: getPage, inView: onPage } = useInView({
+const Skills = ({ onSkills }) => {
+  const { ref: Animate, inView: onAnimate } = useInView({
     triggerOnce:true
   });
 
-  useEffect(() => {
-    if (onPage) {
-      setCurrentPage("#skills");
-    }
-  });
+ 
 
   return (
     <section className="skills-page" id="skills">
       <div className="Narrow-content">
         <div className="row">
-          <div ref={getPage} className="Heading">
-            <span
-              className={`Heading-meta ${onPage ? "AnimateXR" : "animate"}`}
+          <div ref={onSkills} className="Heading">
+            <span ref={Animate}
+              className={`Heading-meta ${onAnimate ? "AnimateXR" : "animate"}`}
             >
               My Specialty
             </span>
-            <h2 className={`col-heading ${onPage ? "AnimateLR" : "animate"}`}>My Skills</h2>
+            <h2 className={`col-heading ${onAnimate ? "AnimateLR" : "animate"}`}>My Skills</h2>
           </div>
         </div>
         <div className="row">
-          <div className={`col-md-12 ${onPage ? "AnimateLR" : "animate"}`}>
+          <div className={`col-md-12 ${onAnimate ? "AnimateLR" : "animate"}`}>
             <p>
               The Big Oxmox advised her not to do so, because there were
               thousands of bad Commas, wild Question Marks and devious Semikoli,
@@ -37,7 +32,7 @@ const Skills = ({ setCurrentPage }) => {
               way.
             </p>
           </div>
-          <div class={`progress-wrap ${onPage ? "AnimateLR1S" : "animate"}`}>
+          <div class={`progress-wrap ${onAnimate ? "AnimateLR1S" : "animate"}`}>
             <h3>Python</h3>
             <div class="progress">
               <div
@@ -52,7 +47,7 @@ const Skills = ({ setCurrentPage }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onPage ? "AnimateRL1S" : "animate"}`}>
+          <div class={`progress-wrap ${onAnimate ? "AnimateRL1S" : "animate"}`}>
             <h3>C</h3>
             <div class="progress">
               <div
@@ -67,7 +62,7 @@ const Skills = ({ setCurrentPage }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onPage ? "AnimateLR2S" : "animate"}`}>
+          <div class={`progress-wrap ${onAnimate ? "AnimateLR2S" : "animate"}`}>
             <h3>Next Js</h3>
             <div class="progress">
               <div
@@ -82,7 +77,7 @@ const Skills = ({ setCurrentPage }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onPage ? "AnimateRL2S" : "animate"}`}>
+          <div class={`progress-wrap ${onAnimate ? "AnimateRL2S" : "animate"}`}>
             <h3>CSS 3</h3>
             <div class="progress">
               <div
@@ -97,7 +92,7 @@ const Skills = ({ setCurrentPage }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onPage ? "AnimateLR3S" : "animate"}`}>
+          <div class={`progress-wrap ${onAnimate ? "AnimateLR3S" : "animate"}`}>
             <h3>HTML 5</h3>
             <div class="progress">
               <div
@@ -112,7 +107,7 @@ const Skills = ({ setCurrentPage }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onPage ? "AnimateRL3S" : "animate"}`}>
+          <div class={`progress-wrap ${onAnimate ? "AnimateRL3S" : "animate"}`}>
             <h3>JavaScript</h3>
             <div class="progress">
               <div
