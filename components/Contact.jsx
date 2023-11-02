@@ -23,7 +23,7 @@ const Contact = ({ onContact }) => {
         <div className="row">
           <div className="contact-container">
             <div className="contact-detail">
-              <div className="web margin-bottom">
+              <div className="web mob-flex margin-bottom">
                 <div className="icon">
                   <AlternateEmailTwoToneIcon fontSize="large" />
                 </div>
@@ -32,19 +32,19 @@ const Contact = ({ onContact }) => {
                 </div>
                 <div className="inline"></div>
               </div>
-              <div className="location margin-bottom">
+              <div className="location mob-flex margin-bottom">
                 <div className="icon">
                   <MapIcon fontSize="large" />
                 </div>
                 <span className="span">
-                  Khora Colony, Sector 62A, Ghaziabad
+                173 A Block, Prashant garden,near thappad gate, Khora Rd, Ghaziabad, Uttar Pradesh 201309
                 </span>
 
                 <div className="inline">
                   <div className="inline"></div>
                 </div>
               </div>
-              <div className="phoneNumber margin-bottom">
+              <div className="phoneNumber mob-flex margin-bottom">
                 <div className="icon">
                   <PhoneAndroidIcon fontSize="large" />
                 </div>

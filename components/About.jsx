@@ -29,9 +29,9 @@ const About = ({ onAbout }) => {
 
   return (
     <section className="about-page" id="about">
-      <div className="narrow-contant">
+      <div  className="narrow-contant">
         <div className="row">
-          <div ref={Ref} className="col-md">
+          <div  className="col-md">
             <div
               className={` row fadeInLeft ${
                 inView ? "AnimateXR" : "animate"
@@ -40,7 +40,7 @@ const About = ({ onAbout }) => {
             >
               <div className="col-md">
                 <div className="about-desc">
-                  <span className="heading-meta">About me</span>
+                  <span ref={Ref} className="heading-meta">About me</span>
                   <h2 ref={onAbout} className="heading">
                     Who am I?
                   </h2>
@@ -53,7 +53,7 @@ const About = ({ onAbout }) => {
                     challenges.
                   </p>
 
-                  <p>
+                  <p ref={Ref}>
                     I am interested in a career in the tech industry, and I am
                     open to learning more about different career paths, such as
                     software engineering, web development, data science, machine

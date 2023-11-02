@@ -83,3 +83,17 @@
     letter-spacing: 5px;
 }
 
+@media (max-width:960px) {
+    .text-inner h1,h2{
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    
+.text-inner {
+    margin-left: 6rem;
+    margin-top: 10rem;
+}
+.cv_btn a{
+    padding: 6px;
+}
+}

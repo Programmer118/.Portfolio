@@ -110,7 +110,7 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onAnimate ? "AnimateRL3S" : "animate"}`}>
+          <div ref={Animate} class={`progress-wrap ${onAnimate ? "AnimateRL3S" : "animate"}`}>
             <h3>JavaScript</h3>
             <div class="progress">
               <div
