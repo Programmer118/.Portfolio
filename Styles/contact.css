@@ -1,146 +1,129 @@
-.inline{
-    display: inline;
+.inline {
+  display: inline;
 }
 
-.contact-page{
-    padding-top: 4em;
-    padding-bottom: 9em;
-    clear: both;
-    width: 100%;
-    transition: all 2s ease-in;
+.contact-page {
+  padding-top: 4em;
+  padding-bottom: 9em;
+  clear: both;
+  width: 100%;
+  transition: all 2s ease-in;
 }
 
-.narrow-contant{
-    padding: 0 3.3em;
-    font-size: 0.9rem;
+.narrow-contant {
+  padding: 0 3.3em;
+  font-size: 0.9rem;
 }
 
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #f2f3f7;
+  color: #6a6a6a;
+  font-size: 1.5rem;
+}
 
-.input{
-    width: 100%;
-    margin-bottom: 1.5rem;
-    background: #F2F3F7;
+textarea {
+  font-size: 1.3rem;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 3rem;
+  border: 1px solid #6a6a6a;
+  background: #f2f3f7;
+  color: #6a6a6a;
+  padding-left: 0.5em;
+}
+
+.heading span {
+  font-size: 0.7rem;
+  padding-bottom: 10px;
+  letter-spacing: 0.5rem;
+  color: #999999;
+}
+
+.heading h3 {
+  margin-top: 2rem;
+}
+
+.contact-detail {
+  height: 100%;
+  width: 80%;
+}
+
+.mob-flex {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container .margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.contact-container .icon {
+  display: inline-block;
+  color: skyblue;
+}
+
+.contact-container .contact-detail span {
+  margin-left: 1.4rem;
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.contact-container .contact-detail .info {
+  color: skyblue;
+}
+
+@media (min-width: 960px) {
+  .input {
+    width: 60%;
+    margin-bottom: 15px !important;
+    background: #f2f3f7;
     color: #6a6a6a;
     font-size: 1.5rem;
-}
+  }
+  textarea {
+    width: 60%;
+  }
 
-textarea{
-    font-size: 1.3rem;
-    width: 100%;
-    height: 10rem;
-    margin-bottom: 3rem;
-    border: 1px solid #6a6a6a;
-    background: #F2F3F7;
-    color: #6a6a6a;
-    padding-left: 0.5em;
-}
+  .contact-container {
+    height: 100%;
+    width: auto;
+    display: flex;
+  }
 
-.heading span{
-    font-size: .7rem;
-    padding-bottom: 10px;
-    letter-spacing: 0.5rem;
-    color: #999999;
-}
-
-.heading h3{
-    margin-top: 2rem;
-
-}
-
-.contact-detail{
+  .contact-detail {
     height: 100%;
     width: 80%;
-}
+  }
 
-.mob-flex{
+  .massage-container {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
+  }
 
+  .contact-container .margin-bottom {
+    margin-bottom: 6rem;
+  }
 
-
-.contact-container .margin-bottom{
-    margin-bottom: 2rem;
-}
-
-.contact-container .icon{
+  .contact-container .icon {
+    background: #f2f3f7;
     display: inline-block;
+    padding: 19px;
     color: skyblue;
-}
+  }
 
-.contact-container .contact-detail span{
+  .contact-container .contact-detail span {
     margin-left: 1.4rem;
-    font-size: 1.1em;
-    line-height: 1em;
-}
+    font-size: 1.15em;
+    line-height: 1.3em;
+    height: 10px;
+  }
 
-.contact-container .contact-detail .info{
+  .contact-container .contact-detail .info {
     color: skyblue;
+  }
 }
-
-
-
-@media (min-width:960px) {
-    .input{
-        width: 60%;
-        margin-bottom: 15px !important;
-        background: #F2F3F7;
-        color: #6a6a6a;
-        font-size: 1.5rem;
-    }
-    textarea{       
-        width: 60%;     
-    }
-    
-    
-
-    
-    .contact-container{
-        height: 100%;
-        width: auto;
-        display: flex;
-    
-    }    
-    
-
-    
-    .contact-detail{
-        height: 100%;
-        width: 80%;
-    }
-    
-    .massage-container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    
-    
-    .contact-container .margin-bottom{
-        margin-bottom: 6rem;
-    }
-    
-    .contact-container .icon{
-        background: #F2F3F7;
-        display: inline-block;
-        padding: 19px;
-        color: skyblue;
-    }
-    
-    .contact-container .contact-detail span{
-        margin-left: 1.4rem;
-        font-size: 1.15em;
-        line-height: 1.3em;
-        height: 10px;
-    }
-    
-    .contact-container .contact-detail .info{
-        color: skyblue;
-    }
-    
-}
-
-

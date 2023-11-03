@@ -35,11 +35,11 @@ const Skills = ({ onSkills }) => {
               way.
             </p>
           </div>
-          <div class={`progress-wrap ${onAnimate ? "AnimateLR1S" : "animate"}`}>
+          <div className={`progress-wrap ${onAnimate ? "AnimateLR1S" : "animate"}`}>
             <h3>Python</h3>
-            <div class="progress">
+            <div className="progress">
               <div
-                class="progress-bar color-1"
+                className="progress-bar color-1"
                 role="progressbar"
                 aria-valuenow="75"
                 aria-valuemin="0"
@@ -50,11 +50,11 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onAnimate ? "AnimateRL1S" : "animate"}`}>
+          <div className={`progress-wrap ${onAnimate ? "AnimateRL1S" : "animate"}`}>
             <h3>C</h3>
-            <div class="progress">
+            <div className="progress">
               <div
-                class="progress-bar color-2"
+                className="progress-bar color-2"
                 role="progressbar"
                 aria-valuenow="35"
                 aria-valuemin="0"
@@ -65,11 +65,11 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onAnimate ? "AnimateLR2S" : "animate"}`}>
+          <div className={`progress-wrap ${onAnimate ? "AnimateLR2S" : "animate"}`}>
             <h3>Next Js</h3>
-            <div class="progress">
+            <div className="progress">
               <div
-                class="progress-bar color-3"
+                className="progress-bar color-3"
                 role="progressbar"
                 aria-valuenow="55"
                 aria-valuemin="0"
@@ -80,11 +80,11 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onAnimate ? "AnimateRL2S" : "animate"}`}>
+          <div className={`progress-wrap ${onAnimate ? "AnimateRL2S" : "animate"}`}>
             <h3>CSS 3</h3>
-            <div class="progress">
+            <div className="progress">
               <div
-                class="progress-bar color-4"
+                className="progress-bar color-4"
                 role="progressbar"
                 aria-valuenow="60"
                 aria-valuemin="0"
@@ -95,11 +95,11 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div class={`progress-wrap ${onAnimate ? "AnimateLR3S" : "animate"}`}>
+          <div className={`progress-wrap ${onAnimate ? "AnimateLR3S" : "animate"}`}>
             <h3>HTML 5</h3>
-            <div class="progress">
+            <div className="progress">
               <div
-                class="progress-bar color-5"
+                className="progress-bar color-5"
                 role="progressbar"
                 aria-valuenow="90"
                 aria-valuemin="0"
@@ -110,11 +110,11 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div ref={Animate} class={`progress-wrap ${onAnimate ? "AnimateRL3S" : "animate"}`}>
+          <div ref={Animate} className={`progress-wrap ${onAnimate ? "AnimateRL3S" : "animate"}`}>
             <h3>JavaScript</h3>
-            <div class="progress">
+            <div className="progress">
               <div
-                class="progress-bar color-6"
+                className="progress-bar color-6"
                 role="progressbar"
                 aria-valuenow="20"
                 aria-valuemin="0"

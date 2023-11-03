@@ -4,8 +4,7 @@
 }
 
 .no{
-    color: #f80505;
-    text-decoration: line-through !important;
+    display: none !important;
 }
 
 
