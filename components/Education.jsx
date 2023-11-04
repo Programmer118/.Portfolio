@@ -17,7 +17,7 @@ const Education = ({Oneducation}) => {
      setCollapseOne(!collapseOne)
       setCollapseTwo(false)
       setCollapseThree(false)
-  
+
   }
   const CollapseTwo = () =>{
     setCollapseOne(false)
@@ -30,6 +30,7 @@ const Education = ({Oneducation}) => {
    setCollapseTwo(false)
    setCollapseThree(!collapseThree)
 
+}
   return (
     <div className="education-page" id="education">
       <div className="narrow-content">
@@ -46,12 +47,12 @@ const Education = ({Oneducation}) => {
                 <div ref={Animate} className={`panel panel-default ${onAnimate ? "AnimateLR1S" : "animate"}`}>
                   <div className="panel-heading">
                     <h4 className="panel-title">
-                      <a href="#collapsedOne" onClick={()=>setCollapseOne(!collapseOne)} className={`${collapseOne ? "":"collapsed"}`}>
+                      <a  onClick={CollapseOne} className={`${collapseOne ? "":"collapsed"}`}>
                         BACHELOR DEGREE OF COMPUTER SCIENCE
                       </a>
                     </h4>
                   </div>
-                  <div id="collapsedOne" className={`panel-collapsed  ${collapseOne ? "":"collapse"}`}>
+                  <div id="collapsedOne" className={`panel-collapsed  ${collapseOne ? "AnimateOcp":"collapse"}`}>
                     <div className="panel-body">
                       <div className="row">
                         <div className="col-md-6">
@@ -74,12 +75,12 @@ const Education = ({Oneducation}) => {
                 <div className={`panel panel-default ${onAnimate ? "AnimateLR1S" : "animate"}`}>
                   <div className="panel-heading">
                     <h4 className="panel-title">
-                      <a href="#collapsedTwo" ref={Oneducation}  onClick={()=>setCollapseTwo(!collapseTwo)} className={`${collapseTwo ? "":"collapsed"}`}>
+                      <a  ref={Oneducation} onClick={CollapseTwo}  className={`${collapseTwo ? "":"collapsed"}`}>
                       HIGH SCHOOL SECONDARY EDUCATION
                       </a>
                     </h4>
                   </div>
-                  <div id="collapsedTwo" className={`panel-collapsed  ${collapseTwo ? "":"collapse"}`}>
+                  <div id="collapsedTwo" className={`panel-collapsed  ${collapseTwo ? "AnimateOcp":"collapse"}`}>
                     <div className="panel-body">
                       <div className="row">
                         <div className="col-md-6">
@@ -102,12 +103,12 @@ const Education = ({Oneducation}) => {
                 <div  className={`panel panel-default ${onAnimate ? "AnimateLR1S" : "animate"}`}>
                   <div className="panel-heading">
                     <h4 className="panel-title">
-                      <a  onClick={()=>setCollapseThree(!collapseThree)} href="#collapsedThree" className={`${collapseThree ? "":"collapsed"}`}>
+                      <a  onClick={CollapseThree}   className={`${collapseThree ? "":"collapsed"}`}>
                       Secondary School EDUCATION
                       </a>
                     </h4>
                   </div>
-                  <div id="collapsedThree" className={`panel-collapsed  ${collapseThree ? "":"collapse"}`}>
+                  <div id="collapsedThree" className={`panel-collapsed  ${collapseThree ? "AnimateOcp":"collapse"}`}>
                     <div className="panel-body">
                       <div className="row">
                         <div className="col-md-6">
