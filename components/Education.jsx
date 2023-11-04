@@ -13,7 +13,22 @@ const Education = ({Oneducation}) => {
   const [collapseThree, setCollapseThree] = useState(false)
 
 
+  const CollapseOne = () =>{
+     setCollapseOne(!collapseOne)
+      setCollapseTwo(false)
+      setCollapseThree(false)
   
+  }
+  const CollapseTwo = () =>{
+    setCollapseOne(false)
+     setCollapseTwo(!collapseTwo)
+     setCollapseThree(false)
+
+ }
+ const CollapseThree = () =>{
+  setCollapseOne(false)
+   setCollapseTwo(false)
+   setCollapseThree(!collapseThree)
 
   return (
     <div className="education-page" id="education">
