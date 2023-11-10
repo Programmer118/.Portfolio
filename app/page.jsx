@@ -10,9 +10,11 @@ import { motion as m } from "framer-motion";
 import Education from "@/components/Education";
 import { useInView } from "react-intersection-observer";
 import Contact from "@/components/Contact";
+import AboutFooter from "@/components/AboutFooter";
+
 
 export default function Home() {
-  const [currentPage, setCurrentPage] = useState(" ");
+  const [currentPage, setCurrentPage] = useState("#hzlhghhzh77d67dfhh/glgjlkffdkhdldl45845hdthz4");
 
   const { ref: home, inView: inHome } = useInView();
   const { ref: about, inView: inAbout } = useInView();
@@ -51,6 +53,8 @@ export default function Home() {
         <Homepage onHome={home} />
 
         <About onAbout={about} />
+       
+        <AboutFooter/>
 
         <Skills onSkills={skills} />
 

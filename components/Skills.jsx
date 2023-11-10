@@ -30,12 +30,14 @@ const Skills = ({ onSkills }) => {
             <p>
               The Big Oxmox advised her not to do so, because there were
               thousands of bad Commas, wild Question Marks and devious Semikoli,
-              but the Little Blind Text didn’t listen. She packed her seven
+              but the Little Blind Text didn't listen. She packed her seven
               versalia, put her initial into the belt and made herself on the
               way.
             </p>
           </div>
-          <div className={`progress-wrap ${onAnimate ? "AnimateLR1S" : "animate"}`}>
+          <div
+            className={`progress-wrap ${onAnimate ? "AnimateLR1S" : "animate"}`}
+          >
             <h3>Python</h3>
             <div className="progress">
               <div
@@ -50,7 +52,9 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div className={`progress-wrap ${onAnimate ? "AnimateRL1S" : "animate"}`}>
+          <div
+            className={`progress-wrap ${onAnimate ? "AnimateRL1S" : "animate"}`}
+          >
             <h3>C</h3>
             <div className="progress">
               <div
@@ -65,7 +69,9 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div className={`progress-wrap ${onAnimate ? "AnimateLR2S" : "animate"}`}>
+          <div
+            className={`progress-wrap ${onAnimate ? "AnimateLR2S" : "animate"}`}
+          >
             <h3>Next Js</h3>
             <div className="progress">
               <div
@@ -80,7 +86,9 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div className={`progress-wrap ${onAnimate ? "AnimateRL2S" : "animate"}`}>
+          <div
+            className={`progress-wrap ${onAnimate ? "AnimateRL2S" : "animate"}`}
+          >
             <h3>CSS 3</h3>
             <div className="progress">
               <div
@@ -95,7 +103,9 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div className={`progress-wrap ${onAnimate ? "AnimateLR3S" : "animate"}`}>
+          <div
+            className={`progress-wrap ${onAnimate ? "AnimateLR3S" : "animate"}`}
+          >
             <h3>HTML 5</h3>
             <div className="progress">
               <div
@@ -110,7 +120,10 @@ const Skills = ({ onSkills }) => {
               </div>
             </div>
           </div>
-          <div ref={Animate} className={`progress-wrap ${onAnimate ? "AnimateRL3S" : "animate"}`}>
+          <div
+            ref={Animate}
+            className={`progress-wrap ${onAnimate ? "AnimateRL3S" : "animate"}`}
+          >
             <h3>JavaScript</h3>
             <div className="progress">
               <div

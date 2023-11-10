@@ -37,7 +37,8 @@ const Contact = ({ onContact }) => {
                   <MapIcon fontSize="large" />
                 </div>
                 <span className="span">
-                173 A Block, Prashant garden,near thappad gate, Khora Rd, Ghaziabad, Uttar Pradesh 201309
+                  173 A Block, Prashant garden,near thappad gate, Khora Rd,
+                  Ghaziabad, Uttar Pradesh 201309
                 </span>
 
                 <div className="inline">

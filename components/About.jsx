@@ -29,9 +29,9 @@ const About = ({ onAbout }) => {
 
   return (
     <section className="about-page" id="about">
-      <div  className="narrow-contant">
+      <div className="narrow-contant">
         <div className="row">
-          <div  className="col-md">
+          <div className="col-md">
             <div
               className={` row fadeInLeft ${
                 inView ? "AnimateXR" : "animate"
@@ -40,7 +40,9 @@ const About = ({ onAbout }) => {
             >
               <div className="col-md">
                 <div className="about-desc">
-                  <span ref={Ref} className="heading-meta">About me</span>
+                  <span ref={Ref} className="heading-meta">
+                    About me
+                  </span>
                   <h2 ref={onAbout} className="heading">
                     Who am I?
                   </h2>
@@ -118,21 +120,7 @@ const About = ({ onAbout }) => {
               </div>
             </div>
           </div>
-          <div id="about-footer" className="row about-footer">
-            <div className="ovrlap"> </div>
-            <div
-              className="about-narrow-contant"
-              style={{ padding: "0 2.5em", marginBottom: " 10rem" }}
-            >
-              <div className="row"></div>
-              <div className="row">
-                <div className="about-contant">
-                  {/* <span
-                  >Hire me</span> */}
-                </div>
-              </div>
-            </div>
-          </div>
+            
         </div>
       </div>
     </section>

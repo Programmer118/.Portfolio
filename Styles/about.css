@@ -1,242 +1,200 @@
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.about-page{
-    padding-top: 4em;
-    padding-bottom: 9em;
-    clear: both;
-    width: 100%;
-    transition: all 2s ease-in;
-   
-}
-
-.narrow-contant{
-    padding: 0 3.3em;
-
+.about-page {
+  padding-top: 4em;
+  padding-bottom: 9em;
+  clear: both;
+  width: 100%;
+  transition: all 2s ease-in;
 }
 
-
-.row{
-    margin-left: -15px;
-    margin-right: -15px;
+.narrow-contant {
+  padding: 0 3.3em;
 }
 
-
-.row::before{
-    content: " ";
-    display: table;
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-
+.row::before {
+  content: " ";
+  display: table;
+}
 
 .row:after {
-    clear: both;
-    content: " ";
-    display: table;
+  clear: both;
+  content: " ";
+  display: table;
 }
 
-.col-md{
-    width: 100%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+.col-md {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-
 
 .row-bottom-padded-sm {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
-
-.about-desc .heading-meta{
-    margin-bottom: 15px;
-    display: inline-block;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #999999;
-    font-weight: 500;
-    letter-spacing: 5px;
-    transition: 0.5ms;
+.about-desc .heading-meta {
+  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+  transition: 0.5ms;
 }
 
-.about-desc .heading{
-    font-size: 18px;
-    margin-bottom: 4em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 1.8;
-    position: relative;
+.about-desc .heading {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
 }
 
 .about-desc p {
-    margin-bottom: 1.5em;
-    margin: 0 0 10px;
-    font-size: 15px;
-
+  margin-bottom: 1.5em;
+  margin: 0 0 10px;
+  font-size: 15px;
 }
 
-
-.icons{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    height: 250px;
-    /* margin-top: 100px; */
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  /* margin-top: 100px; */
 }
 
-@media (min-width:1096px) {
-    
-    .margin-right{
-        margin-right: 10px;
-    }
-    
-    .margin-left{
-        margin-left: 12px;
-    }
-    .icon-padding{
-        padding: 5px;
-    }
-}
+@media (min-width: 1096px) {
+  .margin-right {
+    margin-right: 10px;
+  }
 
+  .margin-left {
+    margin-left: 12px;
+  }
+  .icon-padding {
+    padding: 5px;
+  }
+}
 
 .icons .shadow {
-    width: 25%;
-    height: 10vw;
-    box-shadow: 1px 1px 20px 1px rgb(215, 213, 213);
+  width: 25%;
+  height: 10vw;
+  box-shadow: 1px 1px 20px 1px rgb(215, 213, 213);
+}
+
+.bulb-icon {
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+
+.glob-icon {
+  border-bottom: 2px solid aqua;
+  color: aqua;
+}
+
+.data-icon {
+  border-bottom: 2px solid orangered;
+  color: orangered;
+}
+
+.mobile-icon {
+  border-bottom: 2px solid purple;
+  color: purple;
+}
+
+.icons h3 {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: black;
+}
+
+.about-footer {
+  background-image: url("/image/cover_bg_1.jpg");
+  padding: 3em 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 40vh;
 }
 
 
+#about-footer {
+  position: relative;
+  margin-left: 15px;
+  clear: both;
 
-.bulb-icon{
-    border-bottom: 2px solid blue;
-    color: blue;
 }
 
-
-.glob-icon{
-    border-bottom: 2px solid aqua;
-    color: aqua;
+.about-contant {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 1px;
+  height: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  align-items: center;
 }
-
-
-.data-icon{
-    border-bottom: 2px solid orangered;
-    color: orangered;
-}
-
-
-.mobile-icon{
-    border-bottom: 2px solid purple;
-    color: purple;
-}
-
-
-.icons h3{
-    width: 100%;
-    text-align: center;
-    padding-top: 15px;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: black;
-}
-
-
-.about-footer{
-    background-image: url('/image/cover_bg_1.jpg');
-    padding: 3em 0;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-
-.about-footer .overlap{
-    z-index: 0;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-#about-footer{
-    position: relative;
-    clear: both;
-    margin-top: 5em;
-}
-
-
-.about-contant{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 1px;
-    height: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-
 
 /* Samll devices */
 
-@media (max-width:1096px){
+@media (max-width: 1096px) {
+  .about-footer {
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+  }
 
-    .about-footer{
-        background-position: center;
-        background-size: cover;
-        height: 70vh;
-    }
+  .icons {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
 
-    .icons{
-        display: flex;
-        width: 100%;
-        height:  70vw;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 5rem;
-        margin-bottom: 27rem;
-        
-    }
+  .icons h3 {
+    text-align: left;
+  }
+  /*  */
 
-    .icons h3{
-        text-align: left;
-        
-    }
-/*  */
+  .mtp-25px {
+    margin-top: 25px;
+    padding: 20px;
+  }
 
-    .mtp-25px{
-        margin-top: 25px;
-        padding: 20px;
-
-    }
-
-
-    .icons .shadow{
-        width: 100%;
-        height: 100%;
-        
-    }
-
+  .icons .shadow {
+    width: 100%;
+    height: 100%;
+  }
 }
