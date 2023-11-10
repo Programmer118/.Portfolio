@@ -14,8 +14,9 @@ const AboutFooter = () => {
     >
       <div className="">
         <div className="about-contant">
-          {/* <span
-          >Hire me</span> */}
+         <div className="">
+          
+         </div>
         </div>
       </div>
     </div>

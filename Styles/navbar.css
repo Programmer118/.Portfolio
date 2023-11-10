@@ -16,8 +16,8 @@
   .sidebar {
     display: block;
     position: fixed;
-    z-index: 9999;
-    left: -10px;
+    z-index: 12254;
+    left: -15px;
     top: 0px;
     cursor: pointer;
     padding: 20px;
@@ -85,6 +85,15 @@
   .sidebar.active {
     transform: translateX(300px);
     transition: all 0.3s ease-in;
+  }
+
+
+  @media (max-width:305px) {
+    .sidebar.active {
+      transform: translateX(80vw);
+      transition: all 0.3s ease-in;
+    }
+  
   }
 
   .sidebar.active span {

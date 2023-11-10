@@ -137,7 +137,6 @@
 
 .about-footer {
   background-image: url("/image/cover_bg_1.jpg");
-  padding: 3em 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -147,7 +146,7 @@
 
 #about-footer {
   position: relative;
-  margin-left: 15px;
+  margin: 15px;
   clear: both;
 
 }
@@ -170,7 +169,7 @@
   .about-footer {
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 40vh;
   }
 
   .icons {

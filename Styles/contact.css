@@ -127,3 +127,8 @@ textarea {
     color: skyblue;
   }
 }
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
